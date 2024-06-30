@@ -22,4 +22,6 @@ go.work
 
 .idea
 tmp
+cock-desktop.app
+.DS_Store
 

@@ -274,6 +274,12 @@ github.com/leancodebox/cock v0.0.4 h1:m8oSRRaUn1IVdj9IR0K93qMCYAyh3C1IYX3s60byKC
 github.com/leancodebox/cock v0.0.4/go.mod h1:IzCBAPXYcoGau9os3BrJfR9Ak12QZXmjVsWGzgp88eE=
 github.com/leancodebox/cock v0.0.6 h1:vUcqn2+wk/EHGmEZ7hOFxNdRAQB3qVHzG7lGfCYr4Q0=
 github.com/leancodebox/cock v0.0.6/go.mod h1:IzCBAPXYcoGau9os3BrJfR9Ak12QZXmjVsWGzgp88eE=
+github.com/leancodebox/cock v0.0.7 h1:bIfuW32rqbQgLUa7nHztWMBb2Cg9/TeokSZh/Swh8EY=
+github.com/leancodebox/cock v0.0.7/go.mod h1:IzCBAPXYcoGau9os3BrJfR9Ak12QZXmjVsWGzgp88eE=
+github.com/leancodebox/cock v0.0.8 h1:1Q7x9PQLdJEVT6mlXAIV4xy1N8Zxl/4HiSoCt28l7SI=
+github.com/leancodebox/cock v0.0.8/go.mod h1:IzCBAPXYcoGau9os3BrJfR9Ak12QZXmjVsWGzgp88eE=
+github.com/leancodebox/cock v0.0.9 h1:qL+3u8H829wjeU4Sv9e+Bqudk7Cd6dy1RCWSR4funxE=
+github.com/leancodebox/cock v0.0.9/go.mod h1:IzCBAPXYcoGau9os3BrJfR9Ak12QZXmjVsWGzgp88eE=
 github.com/leodido/go-urn v1.2.4 h1:XlAE/cm/ms7TE/VMVoduSpNBoyc2dOxHs5MZSwAN63Q=
 github.com/leodido/go-urn v1.2.4/go.mod h1:7ZrI8mTSeBSHl/UaRyKQW1qZeMgak41ANeCNaVckg+4=
 github.com/leodido/go-urn v1.4.0 h1:WT9HwE9SGECu3lg4d/dIA+jxlljEa1/ffXKmRjqdmIQ=
