@@ -11,8 +11,6 @@ import (
 	"github.com/leancodebox/cock/jobmanager"
 	"github.com/leancodebox/cock/jobmanagerserver"
 	"log"
-	"log/slog"
-	"os"
 )
 
 func logLifecycle(a fyne.App) {
@@ -43,34 +41,36 @@ func main() {
 			hello.SetText("Welcome :)")
 		}),
 	))
-	w.SetCloseIntercept(func() {
-		w.Hide()
-	})
-	// 桌面系统设置托盘
-	if desk, ok := a.(desktop.App); ok {
-		m := fyne.NewMenu("bigBrother",
-			fyne.NewMenuItem("关于", func() {
-				w.Show()
-			}),
-		)
-		desk.SetSystemTrayMenu(m)
+	err := startCockServer()
+	if err != nil {
+		hello.SetText(err.Error())
+	} else {
+		w.SetCloseIntercept(func() {
+			w.Hide()
+		})
+		// 桌面系统设置托盘
+		if desk, ok := a.(desktop.App); ok {
+			m := fyne.NewMenu("bigBrother",
+				fyne.NewMenuItem("关于", func() {
+					w.Show()
+				}),
+			)
+			desk.SetSystemTrayMenu(m)
+		}
 	}
 	w.Resize(fyne.NewSize(300, 80))
 	w.SetFixedSize(true)
-	startCockServer()
+
 	w.ShowAndRun()
 }
 
-func startCockServer() {
-	fileData, err := os.ReadFile("jobConfig.json")
+func startCockServer() error {
+	err := jobmanager.RegByUserConfig()
 	if err != nil {
-		slog.Error(err.Error())
-		return
+		return err
 	}
-
-	jobmanager.Reg(fileData)
 	jobmanagerserver.ServeRun()
-
+	return nil
 }
 
 func stop() {

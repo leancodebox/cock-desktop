@@ -4,7 +4,7 @@ go 1.21.0
 
 require (
 	fyne.io/fyne/v2 v2.4.3
-	github.com/leancodebox/cock v0.0.4
+	github.com/leancodebox/cock v0.0.6
 )
 
 require (
