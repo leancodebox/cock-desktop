@@ -11,20 +11,11 @@
       "params": [
         "serve"
       ],
-      "dir": "/Users/thh/workspace/thh",
-      "run": true
-    },
-    {
-      "jobName": "dt",
-      "binPath": "dt",
-      "params": [
-        "serve"
-      ],
       "options": {
         "outputType": 1,
         "outputPath": "./tmp"
       },
-      "dir": "/Users/thh/workspace/atool",
+      "dir": "D:\\workspace\\shy",
       "run": true
     }
   ],
@@ -35,6 +26,10 @@
       "params": [
         "now"
       ],
+      "options": {
+        "outputType": 1,
+        "outputPath": "./tmp"
+      },
       "spec": "* * * * *",
       "run": true
     }
